@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Nested Layout</title>
+    <style>
+        .food-item {
+            display: block;
+            border-radius: 8px;
+            background-color: rgb(31, 41, 55);
+            padding: 10px;
+            width: 400px;
+            margin-bottom: 20px;
+        }
+
+        .food-item img {
+            width: 50px;
+            border-radius: 25px;
+            vertical-align: top;
+
+        }
+
+        .food-info {
+            display: inline-block;
+        }
+
+        .food-title {
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: white;
+            margin: 0;
+        }
+
+        .food-description {
+            width: 200px;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            color: white;
+           
+        }
+
+        .buttons {
+            display: block;
+            margin-left: 50px;
+        }
+
+        .order-btn {
+            background-color: #1e90ff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            transition: background-color 0.2s;
+        }
+
+        .order-btn:hover {
+            background-color: rgb(0, 68, 255);
+        }
+
+        .details-btn {
+            padding: 8px 16px;
+            background-color: #666;
+            border: none;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .details-btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="food-item">
+        <img class="image" src="images/delicious burger.jpg">
+
+        <div class="food-info">
+            <p class="food-title">Delicious Burger</p>
+
+            <p class="food-description">Juicy beef burger with lettuce, tomato, and cheese.</p>
+        </div>
+
+        <div class="buttons">
+            <button class="order-btn">Order now</button>
+
+            <button class="details-btn">Details</button>
+        </div>
+    </div>
+
+    <div class="food-item">
+        <img class="image" src="images/spicy tacos.jpeg">
+
+        <div class="food-info">
+            <p class="food-title">Spicy tacos</p>
+
+            <p class="food-description">Soft tacos with spicy chicken and fresh veggies.</p>
+        </div>
+        <div class="buttons">
+            <button class="order-btn">Order now</button>
+
+            <button class="details-btn">Details</button>
+        </div>
+    </div>
+
+    <div class="food-item">
+        <img class="image" src="images/vegan salad.jpg">
+        <div class="food-info">
+            <p class="food-title">Vegan Salad</p>
+
+            <p class="food-description">Healthy mix of vegetables with a light vinaigrette.</p>
+
+        </div>
+        <div class="buttons">
+            <button class="order-btn">Order now</button>
+
+            <button class="details-btn">Details</button>
+        </div>
+    </div>
+</body>
+
+</html>
