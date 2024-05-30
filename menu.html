@@ -20,11 +20,17 @@
             margin-bottom: 20px;
         }
 
-        .food-item img {
+        .food-image {
+            display: inline-block;
+
+            vertical-align: top;
+        }
+
+        .food-image img {
             width: 50px;
             border-radius: 25px;
             vertical-align: top;
-
+            margin-top: 0;
         }
 
         .food-info {
@@ -45,7 +51,7 @@
             font-family: 'Poppins', sans-serif;
             font-weight: 400;
             color: white;
-           
+
         }
 
         .buttons {
@@ -88,7 +94,9 @@
 <body>
 
     <div class="food-item">
-        <img class="image" src="delicious burger.jpg">
+        <div class="food-image">
+            <img src="delicious burger.jpg">
+        </div>
 
         <div class="food-info">
             <p class="food-title">Delicious Burger</p>
@@ -104,7 +112,9 @@
     </div>
 
     <div class="food-item">
-        <img class="image" src="spicy tacos.jpeg">
+        <div class="food-image">
+            <img src="spicy tacos.jpeg">
+        </div>
 
         <div class="food-info">
             <p class="food-title">Spicy tacos</p>
@@ -119,7 +129,9 @@
     </div>
 
     <div class="food-item">
-        <img class="image" src="vegan salad.jpg">
+        <div class="food-image">
+            <img class="image" src="vegan salad.jpg">
+        </div>
         <div class="food-info">
             <p class="food-title">Vegan Salad</p>
 
