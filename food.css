@@ -1,0 +1,274 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+    /* Base styles for dark mode */
+    .dark-mode {
+      background-color: rgb(17, 24, 39);
+      /* Dark background color */
+      color: #f5f5f5;
+      /* Light text color */
+    }
+
+    /* Make the navbar fixed */
+    .navbar {
+      position: fixed;
+      /* Add position fixed */
+      top: 0;
+      /* Stick to the top */
+      left: 0;
+      /* Stick to the left */
+      width: 100%;
+      /* Full width */
+      z-index: 1;
+      /* Keep on top of other elements */
+      background-color: rgb(31, 41, 55);
+      /* Dark gray */
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Logo styles */
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    /* Search bar styles */
+    .search-bar {
+      position: relative;
+      width: 100%;
+      /* Full width */
+      max-width: 500px;
+      /* Max width for responsiveness */
+      display: flex;
+      background-color: rgb(55, 65, 81);
+      border-radius: 10px;
+    }
+
+    .search-bar input {
+      flex: 1;
+      padding: 0.5rem 1rem;
+      /* Padding for input */
+      background: transparent;
+      border: none;
+      /* Border for input */
+      color: #fff;
+      /* Text color */
+      border-radius: 4px;
+      /* Rounded corners */
+      outline: none;
+      border: none;
+      font-size: 19px;
+      border-radius: 5px;
+    }
+
+    .search-bar input::placeholder {
+      color: grey;
+    }
+
+    .search-bar .search-button {
+      padding: 0.5rem 1rem;
+      background: transparent;
+      border: none;
+      color: #f5f5f5;
+      /* Icon color */
+      cursor: pointer;
+    }
+
+    /* Navbar links styles */
+    .navbar-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .navbar-links a {
+      text-decoration: none;
+      color: #f5f5f5;
+      /* Link color */
+      transition: color 0.2s;
+    }
+
+    .navbar-links a:hover {
+      color: #ccc;
+      /* Hover effect */
+    }
+
+    /* Container styles */
+    .container {
+      padding: 6rem 2rem 0rem 2rem;
+      /* Adjusted padding */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-left: 300px;
+    }
+
+    /* Food item styles */
+    .food-item {
+      flex-basis: calc(33.33% - 2rem);
+      /* Adjusted width */
+      background-color: rgb(31, 41, 55);
+      padding: 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      width: 100px;
+    }
+
+    .food-item img {
+      width: 100%;
+      /* Full width */
+      height: 200px;
+      /* Automatic height */
+      border-radius: 8px;
+      /* Rounded corners */
+      margin-bottom: 1rem;
+      /* Space for mobile responsiveness */
+    }
+
+    .food-info h2 {
+      margin: 0;
+      font-size: 1.25rem;
+      /* Larger font size for heading */
+      color: #fff;
+      /* Text color */
+    }
+
+    .food-info p {
+      color: #ccc;
+      /* Light gray for secondary text */
+    }
+
+    .buttons {
+      display: flex;
+      gap: 0.5rem;
+      /* Space between buttons */
+    }
+
+    .order-btn,
+    .details-btn {
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .order-btn {
+      background-color: #1e90ff;
+      /* Blue background */
+      color: white;
+      /* White text */
+      transition: background-color 0.2s;
+    }
+
+    .order-btn:hover {
+      background-color: #0066cc;
+      /* Hover effect */
+    }
+
+    .details-btn {
+      background-color: #666;
+      /* Gray background */
+      color: white;
+      transition: background-color 0.2s;
+    }
+
+    .details-btn:hover {
+      background-color: #444;
+      /* Hover effect */
+    }
+
+     /* Sidebar styles */
+     .sidebar {
+      width: 300px;
+      /* Set the sidebar width */
+      background-color: rgb(14, 20, 28);
+      /* Dark gray */
+      padding: 1rem;
+      border-top: 1px solid #444;
+      /* Add a top border */
+      height: 100vh;
+      /* Full height */
+      position: fixed;
+      /* Fixed position */
+      top: 0;
+      /* Stick to the top */
+      left: 0;
+      /* Stick to the left */
+      overflow-y: auto;
+      /* Enable vertical scrolling */
+      margin-top: 60px;
+    }
+
+    .icon {
+        width: 1.1em;
+        height: 1.1em;
+        vertical-align: -0.125em;
+      }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 10px;
+    }
+
+    .sidebar ul li a {
+        text-decoration: none;
+        color: #a5a5a5;
+        font-weight: bold;
+        display: block;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .sidebar ul li a:hover {
+        background-color: #333;
+    }
+
+
+    /* Media queries for responsiveness */
+    @media (max-width: 1024px) {
+      .food-item {
+        flex-basis: calc(50% - 2rem);
+        /* Adjusted width */
+      }
+    }
+
+    @media (max-width: 768px) {
+      .food-item {
+        flex-basis: calc(100% - 2rem);
+        /* Adjusted width */
+        margin-bottom: 1rem;
+        /* Adjusted margin */
+      }
+      /* Container styles */
+    .container {
+     /* padding: 10px; */
+     padding: 6rem 0rem 0rem 2rem;
+      margin-left:0;
+    }
+    .sidebar{
+      display: none;
+    }
+    .navbar-links{
+      display: none;
+    }
+    .search-bar{
+      display: none;
+    }
+    }
+ 
