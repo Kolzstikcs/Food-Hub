@@ -190,50 +190,50 @@
   background-color: #333;
 }
 
-/* Tooltip styles for navbar links */
-.navbar-links {
-  display: flex;
-  gap: 20px;
-}
+ /* Tooltip styles for navbar links and search icon */
+ .navbar-links a,
+ .search-button {
+   position: relative;
+   text-decoration: none;
+   color: #a5a5a5;
+ }
 
-.navbar-links a {
-  position: relative;
-  text-decoration: none;
-  color: #a5a5a5;
-}
+ .navbar-links a .tooltip,
+ .search-button .tooltip {
+   visibility: hidden;
+   width: 80px;
+   background-color: #fff; /* Light background */
+   color: #333; /* Dark text */
+   text-align: center;
+   border-radius: 5px;
+   padding: 5px;
+   position: absolute;
+   z-index: 1;
+   top: 100%; /* Position below the link/icon */
+   left: 50%;
+   margin-left: -40px; /* Center the tooltip */
+   opacity: 0;
+   transition: opacity 0.3s;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+ }
 
-.navbar-links a .tooltip {
-  visibility: hidden;
-  width: 80px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  border-radius: 5px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  top: 100%; /* Position below the link */
-  left: 50%;
-  margin-left: -40px; /* Center the tooltip */
-  opacity: 0;
-  transition: opacity 0.3s;
-}
+ .navbar-links a .tooltip::after,
+ .search-button .tooltip::after {
+   content: "";
+   position: absolute;
+   bottom: 100%; /* At the top of the tooltip */
+   left: 50%;
+   margin-left: -5px;
+   border-width: 5px;
+   border-style: solid;
+   border-color: transparent transparent #fff transparent; /* Light background for arrow */
+ }
 
-.navbar-links a .tooltip::after {
-  content: "";
-  position: absolute;
-  bottom: 100%; /* At the top of the tooltip */
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent #333 transparent;
-}
-
-.navbar-links a:hover .tooltip {
-  visibility: visible;
-  opacity: 1;
-}
+ .navbar-links a:hover .tooltip,
+ .search-button:hover .tooltip {
+   visibility: visible;
+   opacity: 1;
+ }
 
 @media (max-width: 1024px) {
   .food-item {

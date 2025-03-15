@@ -1,217 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Food Ordering Website</title>
+    <!-- Viewport meta tag for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="food.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Food Ordering Website</title>
-  <!-- Viewport meta tag for responsive design -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-  <link rel="stylesheet" href="food.css">
- 
-</head>
+  <body class="dark-mode">
+    <!-- Dark mode class for theming -->
 
-<body class="dark-mode">
-  <!-- Dark mode class for theming -->
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <!-- Logo -->
-    <div class="logo">
-      <span>
-        <i class="fas fa-utensils" style="color: lightblue;"></i>
-      </span> FoodHub
-    </div>
-    <!-- Search Bar -->
-    <div class="search-bar">
-      <input type="text" placeholder="Search..." />
-      <button class="search-button">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo">
         <span>
-          <i class="fas fa-search" style="color: #a5a5a5;"></i>
+          <i class="fas fa-utensils" style="color: lightblue"></i>
         </span>
-      </button>
-    </div>
-    <!-- Navbar Links with Tooltips -->
-    <div class="navbar-links">
-      <a href="#">
-        Home
-        <span class="tooltip">Home</span>
-      </a>
-      <a href="#">
-        Menu
-        <span class="tooltip">Menu</span>
-      </a>
-      <a href="#">
-        Contact
-        <span class="tooltip">Contact</span>
-      </a>
-    </div>
-  </nav>
-
-  <!-- Sidebar content here -->
-  <div class="sidebar">
-    <!-- Add sidebar links or content here -->
-    <ul>
-      <li>
-        <a href="#">
+        FoodHub
+      </div>
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." />
+        <button class="search-button">
           <span>
-            <i class="fas fa-home" style="color: #a5a5a5;"></i>
-          </span> Home
-        </a>
-      </li>
-      <li>
+            <i class="fas fa-search" style="color: #a5a5a5"></i>
+            <span class="tooltip">Search</span>
+            <!-- Tooltip for search icon -->
+          </span>
+        </button>
+      </div>
+      <!-- Navbar Links with Tooltips -->
+      <div class="navbar-links">
         <a href="#">
-          <span>
-            <i class="fas fa-shopping-cart" style="color: #a5a5a5;"></i>
-          </span> Orders
+          Home
+          <span class="tooltip">Home</span>
         </a>
-      </li>
-      <li>
         <a href="#">
-          <span>
-            <i class="fas fa-shopping-basket" style="color: #a5a5a5;"></i>
-          </span> Cart
+          Menu
+          <span class="tooltip">Menu</span>
         </a>
-      </li>
-      <li>
         <a href="#">
-          <span>
-            <i class="fas fa-credit-card" style="color: #a5a5a5;"></i>
-          </span> Payments
+          Contact
+          <span class="tooltip">Contact</span>
         </a>
-      </li>
-      <li>
-        <a href="#">
-          <span>
-            <i class="fas fa-truck" style="color: #a5a5a5;"></i>
-          </span> Delivery
-        </a>
-      </li>
-      <li>
-        <a href="#">
-          <span>
-            <i class="fas fa-calendar-times" style="color: #a5a5a5;"></i>
-          </span> Due-dates
-        </a>
-      </li>
-    </ul>
-  </div>
-  <!-- Food Display Section -->
-  <div class="container">
-    <!-- Wrapper for content -->
-    <!-- Food Item 1 -->
-    <div class="food-item">
-      <img src="images/delicious burger.jpg" alt="Delicious Burger">
-      <div class="food-info">
-        <h2>Delicious Burger</h2>
-        <p>Juicy beef burger with lettuce, tomato, and cheese.</p>
-        <div class="buttons">
-          <button class="order-btn">Order Now</button>
-          <button class="details-btn">Details</button>
+      </div>
+    </nav>
+
+    <!-- Sidebar content here -->
+    <div class="sidebar">
+      <!-- Add sidebar links or content here -->
+      <ul>
+        <li>
+          <a href="#">
+            <span>
+              <i class="fas fa-home" style="color: #a5a5a5"></i>
+            </span>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <i class="fas fa-shopping-cart" style="color: #a5a5a5"></i>
+            </span>
+            Orders
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <i class="fas fa-shopping-basket" style="color: #a5a5a5"></i>
+            </span>
+            Cart
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <i class="fas fa-credit-card" style="color: #a5a5a5"></i>
+            </span>
+            Payments
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <i class="fas fa-truck" style="color: #a5a5a5"></i>
+            </span>
+            Delivery
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span>
+              <i class="fas fa-calendar-times" style="color: #a5a5a5"></i>
+            </span>
+            Due-dates
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- Food Display Section -->
+    <div class="container">
+      <!-- Wrapper for content -->
+      <!-- Food Item 1 -->
+      <div class="food-item">
+        <img src="images/delicious burger.jpg" alt="Delicious Burger" />
+        <div class="food-info">
+          <h2>Delicious Burger</h2>
+          <p>Juicy beef burger with lettuce, tomato, and cheese.</p>
+          <div class="buttons">
+            <button class="order-btn">Order Now</button>
+            <button class="details-btn">Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food Item 2 -->
+      <div class="food-item">
+        <img src="images/spicy tacos.jpeg" alt="Spicy Tacos" />
+        <div class="food-info">
+          <h2>Spicy Tacos</h2>
+          <p>Soft tacos with spicy chicken and fresh veggies.</p>
+          <div class="buttons">
+            <button class="order-btn">Order Now</button>
+            <button class="details-btn">Details</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food Item 3 -->
+      <div class="food-item">
+        <img src="images/vegan salad.jpg" alt="Vegan Salad" />
+        <div class="food-info">
+          <h2>Vegan Salad</h2>
+          <p>Healthy mix of vegetables with a light vinaigrette.</p>
+          <div class="buttons">
+            <button class="order-btn">Order Now</button>
+            <button class="details-btn">Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-item">
+        <img src="images/Margherita Pizza.jpeg" alt="Margherita Pizza" />
+        <div class="food-info">
+          <h2>Margherita Pizza</h2>
+          <p>Classic Italian pizza with tomatoes and mozzarella.</p>
+          <div class="buttons">
+            <button class="order-btn">Order Now</button>
+            <button class="details-btn">Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-item">
+        <img src="images/Spaghetti Carbonara.jpeg" alt="Spaghetti Carbonara" />
+        <div class="food-info">
+          <h2>Spaghetti Carbonara</h2>
+          <p>Traditional pasta dish with bacon, eggs, and cheese.</p>
+          <div class="buttons">
+            <button class="order-btn">Order Now</button>
+            <button class="details-btn">Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-item">
+        <img src="images/Sushi Platter.jpeg" alt="Sushi Platter" />
+        <div class="food-info">
+          <h2>Sushi Platter</h2>
+          <p>Assortment of fresh sushi with soy sauce and wasabi.</p>
+          <div class="buttons">
+            <button class="order-btn">Order Now</button>
+            <button class="details-btn">Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-item">
+        <img src="images/Chocolate Cake.jpeg" alt="Chocolate Cake" />
+        <div class="food-info">
+          <h2>Chocolate Cake</h2>
+          <p>Decadent dessert made with rich chocolate layers.</p>
+          <div class="buttons">
+            <button class="order-btn">Order Now</button>
+            <button class="details-btn">Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-item">
+        <img src="images/Iced Coffee.jpeg" alt="Iced Coffee" />
+        <div class="food-info">
+          <h2>Iced Coffee</h2>
+          <p>Refreshing cold coffee with milk and ice.</p>
+          <div class="buttons">
+            <button class="order-btn">Order Now</button>
+            <button class="details-btn">Details</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-item">
+        <img src="images/Caesar Salad.jpeg" alt="Caesar Salad" />
+        <div class="food-info">
+          <h2>Caesar Salad</h2>
+          <p>
+            Classic salad with romaine lettuce, croutons, and Caesar dressing.
+          </p>
+          <div class="buttons">
+            <button class="order-btn">Order Now</button>
+            <button class="details-btn">Details</button>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- Food Item 2 -->
-    <div class="food-item">
-      <img src="images/spicy tacos.jpeg" alt="Spicy Tacos">
-      <div class="food-info">
-        <h2>Spicy Tacos</h2>
-        <p>Soft tacos with spicy chicken and fresh veggies.</p>
-        <div class="buttons">
-          <button class="order-btn">Order Now</button>
-          <button class="details-btn">Details</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Food Item 3 -->
-    <div class="food-item">
-      <img src="images/vegan salad.jpg" alt="Vegan Salad">
-      <div class="food-info">
-        <h2>Vegan Salad</h2>
-        <p>Healthy mix of vegetables with a light vinaigrette.</p>
-        <div class="buttons">
-          <button class="order-btn">Order Now</button>
-          <button class="details-btn">Details</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="food-item">
-      <img src="images/Margherita Pizza.jpeg" alt="Margherita Pizza">
-      <div class="food-info">
-        <h2>Margherita Pizza</h2>
-        <p>Classic Italian pizza with tomatoes and mozzarella.</p>
-        <div class="buttons">
-          <button class="order-btn">Order Now</button>
-          <button class="details-btn">Details</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="food-item">
-      <img src="images/Spaghetti Carbonara.jpeg" alt="Spaghetti Carbonara">
-      <div class="food-info">
-        <h2>Spaghetti Carbonara</h2>
-        <p>Traditional pasta dish with bacon, eggs, and cheese.</p>
-        <div class="buttons">
-          <button class="order-btn">Order Now</button>
-          <button class="details-btn">Details</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="food-item">
-      <img src="images/Sushi Platter.jpeg" alt="Sushi Platter">
-      <div class="food-info">
-        <h2>Sushi Platter</h2>
-        <p>Assortment of fresh sushi with soy sauce and wasabi.</p>
-        <div class="buttons">
-          <button class="order-btn">Order Now</button>
-          <button class="details-btn">Details</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="food-item">
-      <img src="images/Chocolate Cake.jpeg" alt="Chocolate Cake">
-      <div class="food-info">
-        <h2>Chocolate Cake</h2>
-        <p>Decadent dessert made with rich chocolate layers.</p>
-        <div class="buttons">
-          <button class="order-btn">Order Now</button>
-          <button class="details-btn">Details</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="food-item">
-      <img src="images/Iced Coffee.jpeg" alt="Iced Coffee">
-      <div class="food-info">
-        <h2>Iced Coffee</h2>
-        <p>Refreshing cold coffee with milk and ice.</p>
-        <div class="buttons">
-          <button class="order-btn">Order Now</button>
-          <button class="details-btn">Details</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="food-item">
-      <img src="images/Caesar Salad.jpeg" alt="Caesar Salad">
-      <div class="food-info">
-        <h2>Caesar Salad</h2>
-        <p>Classic salad with romaine lettuce, croutons, and Caesar dressing.</p>
-        <div class="buttons">
-          <button class="order-btn">Order Now</button>
-          <button class="details-btn">Details</button>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</body>
-
+  </body>
 </html>
